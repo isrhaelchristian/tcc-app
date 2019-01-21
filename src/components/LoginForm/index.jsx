@@ -37,11 +37,11 @@ class LoginForm extends Component {
           })(
             <Checkbox>Remember me</Checkbox>
           )}
-          <a className="login-form-forgot" href="">Forgot password</a>
+          <a className="login-form-forgot" href="https://">Forgot password</a>
           <Button type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-          Or <a href="">register now!</a>
+          Or <a href="https://">register now!</a>
         </Form.Item>
       </Form>
     )
