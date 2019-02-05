@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, Icon, Input, Button } from "antd";
 
-class LoginForm extends Component {
+class RegisterForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
@@ -14,7 +14,7 @@ class LoginForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="login-form">
+      <Form onSubmit={this.handleSubmit} className="register-form">
         <Form.Item>
           {getFieldDecorator("userName", {
             rules: [{ required: true, message: "Please input your username!" }]
@@ -22,6 +22,16 @@ class LoginForm extends Component {
             <Input
               prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
               placeholder="Username"
+            />
+          )}
+        </Form.Item>
+        <Form.Item>
+          {getFieldDecorator("email", {
+            rules: [{ required: true, message: "Please input your email!" }]
+          })(
+            <Input
+              prefix={<Icon type="mail" style={{ color: "rgba(0,0,0,.25)" }} />}
+              placeholder="Email"
             />
           )}
         </Form.Item>
@@ -41,18 +51,13 @@ class LoginForm extends Component {
             valuePropName: "checked",
             initialValue: true
           })(
-            <div>
-              <a className="login-form-forgot" href="https://">
-                Forgot password
-              </a>
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="login-form-button"
-              >
-                Log in
-              </Button>
-            </div>
+            <Button
+              type="primary"
+              htmlType="submit"
+              className="register-form-button"
+            >
+              Sign up
+            </Button>
           )}
         </Form.Item>
       </Form>
@@ -60,6 +65,6 @@ class LoginForm extends Component {
   }
 }
 
-export const WrappedLoginForm = Form.create({ name: "normal_login" })(
-  LoginForm
+export const WrappedRegisterForm = Form.create({ name: "normal_register" })(
+  RegisterForm
 );

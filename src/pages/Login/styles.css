@@ -1,6 +1,6 @@
 .rigth-container {
-  padding-left: 10vw !important;
-  padding-right: 10vw !important;
+  width: 50vw;
+  height: 100vh;
 }
 
 .container {

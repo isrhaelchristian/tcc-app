@@ -1,13 +1,17 @@
 import React from "react";
 import { Trail, animated } from "react-spring";
-import { WrappedLoginForm as LoginForm } from "../../components/LoginForm";
+import Login from "../../pages/Login";
+import { WrappedRegisterForm as RegisterForm } from "../../components/RegisterForm";
+import LoginBanner from "../../components/LoginBanner";
+import RegisterBanner from "../../components/RegisterBanner";
+
 import "./styles.css";
 
 export default class Container extends React.PureComponent {
-  state = { toggle: true, items: [<LoginForm />] };
+  state = { toggle: true,};
   toggle = () => this.setState(state => ({ toggle: !state.toggle }));
   render() {
-    const { toggle, items } = this.state;
+    const { toggle } = this.state;
     return (
       <div
         style={{
@@ -23,9 +27,9 @@ export default class Container extends React.PureComponent {
           native
           reverse={toggle}
           initial={null}
-          items={items}
+          items={toggle ? <Login /> : <RegisterBanner />}
           from={{ opacity: 0, x: -100 }}
-          to={{ opacity: toggle ? 1 : 0.25, x: toggle ? 0 : 100 }}
+          to={{ opacity: toggle ? 1 : 1, x: toggle ? 0 : 100 }}
         >
           {item => ({ x, opacity }) => (
             <animated.div
@@ -44,9 +48,9 @@ export default class Container extends React.PureComponent {
           native
           reverse={!toggle}
           initial={null}
-          items={items}
+          items={!toggle ? <RegisterForm /> : <LoginBanner />}
           from={{ opacity: 0, x: 0 }}
-          to={{ opacity: !toggle ? 1 : 0.25, x: toggle ? 0 : -100 }}
+          to={{ opacity: !toggle ? 1 : 1, x: toggle ? 0 : -100 }}
         >
           {item => ({ x, opacity }) => (
             <animated.div
