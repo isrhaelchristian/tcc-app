@@ -5,7 +5,7 @@ import "./styles.css";
 export default class RegisterBanner extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container-register-banner">
         <h2 className="title">Welcome Back!</h2>
         <p className="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

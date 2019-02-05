@@ -1,7 +1,7 @@
 import React from "react";
 import { Trail, animated } from "react-spring";
-import Login from "../../pages/Login";
-import { WrappedRegisterForm as RegisterForm } from "../../components/RegisterForm";
+import Login from "../../components/Login";
+import Register from "../../components/Register";
 import LoginBanner from "../../components/LoginBanner";
 import RegisterBanner from "../../components/RegisterBanner";
 
@@ -15,7 +15,7 @@ export default class Container extends React.PureComponent {
     return (
       <div
         style={{
-          backgroundColor: "#247BA0",
+          backgroundColor: "#FFF",
           position: "relative",
           width: "100vw",
           height: "100vh",
@@ -27,13 +27,12 @@ export default class Container extends React.PureComponent {
           native
           reverse={toggle}
           initial={null}
-          items={toggle ? <Login /> : <RegisterBanner />}
+          items={toggle ? <Login /> : <Register />}
           from={{ opacity: 0, x: -100 }}
           to={{ opacity: toggle ? 1 : 1, x: toggle ? 0 : 100 }}
         >
           {item => ({ x, opacity }) => (
             <animated.div
-              className="box"
               onClick={this.toggle}
               style={{
                 opacity,
@@ -48,13 +47,12 @@ export default class Container extends React.PureComponent {
           native
           reverse={!toggle}
           initial={null}
-          items={!toggle ? <RegisterForm /> : <LoginBanner />}
+          items={!toggle ? <RegisterBanner /> : <LoginBanner />}
           from={{ opacity: 0, x: 0 }}
           to={{ opacity: !toggle ? 1 : 1, x: toggle ? 0 : -100 }}
         >
           {item => ({ x, opacity }) => (
             <animated.div
-              className="box"
               onClick={this.toggle}
               style={{
                 opacity,

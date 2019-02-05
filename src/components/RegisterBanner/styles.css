@@ -1,5 +1,5 @@
-.container {
-  width: 40vw;
+.container-register-banner {
+  width: 50vw;
   height: 100vw;
   display: flex;
   flex-direction: column;
