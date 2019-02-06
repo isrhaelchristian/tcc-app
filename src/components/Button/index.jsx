@@ -3,7 +3,7 @@ import "./styles.css";
 
 const index = props => {
   return (
-    <div className="button-sign-up" onClick={props.toggle}>
+    <div className={"button-sign-up"} onClick={props.toggle}>
       <p className="btn-text">{props.text}</p>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Form, Icon, Input, Button } from "antd";
+import { Form, Icon, Input } from "antd";
+import Button from "../Button";
 
 class LoginForm extends Component {
   handleSubmit = e => {
@@ -14,8 +15,8 @@ class LoginForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="login-form">
-        <Form.Item>
+      <Form onSubmit={this.handleSubmit} className="form">
+        <Form.Item className="form-item">
           {getFieldDecorator("userName", {
             rules: [{ required: true, message: "Please input your username!" }]
           })(
@@ -25,33 +26,28 @@ class LoginForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item>
+        <Form.Item className="form-item">
           {getFieldDecorator("password", {
             rules: [{ required: true, message: "Please input your Password!" }]
           })(
             <Input
+              className="input"
               prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
               type="password"
               placeholder="Password"
             />
           )}
         </Form.Item>
-        <Form.Item>
+        <Form.Item className="form-item">
           {getFieldDecorator("remember", {
             valuePropName: "checked",
             initialValue: true
           })(
-            <div>
-              <a className="login-form-forgot" href="https://">
+            <div className="login-actions">
+              <a className="login-forgot" href="https://">
                 Forgot password
               </a>
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="login-form-button"
-              >
-                Log in
-              </Button>
+              <Button toggle={() => alert("Signup")} text={"Sign In"} />
             </div>
           )}
         </Form.Item>

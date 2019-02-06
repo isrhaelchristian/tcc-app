@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Form, Icon, Input, Button } from "antd";
+import { Form, Icon, Input } from "antd";
+import Button from "../Button";
 
 class RegisterForm extends Component {
   handleSubmit = e => {
@@ -14,8 +15,8 @@ class RegisterForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="register-form">
-        <Form.Item>
+      <Form onSubmit={this.handleSubmit} className="form">
+        <Form.Item className="form-item">
           {getFieldDecorator("userName", {
             rules: [{ required: true, message: "Please input your username!" }]
           })(
@@ -25,7 +26,7 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item>
+        <Form.Item className="form-item">
           {getFieldDecorator("email", {
             rules: [{ required: true, message: "Please input your email!" }]
           })(
@@ -35,7 +36,7 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item>
+        <Form.Item className="form-item">
           {getFieldDecorator("password", {
             rules: [{ required: true, message: "Please input your Password!" }]
           })(
@@ -46,18 +47,12 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item>
+        <Form.Item className="form-item register-actions">
           {getFieldDecorator("remember", {
             valuePropName: "checked",
             initialValue: true
           })(
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="register-form-button"
-            >
-              Sign up
-            </Button>
+            <Button toggle={() => alert("Signup")} text={"Sign Up"} />
           )}
         </Form.Item>
       </Form>

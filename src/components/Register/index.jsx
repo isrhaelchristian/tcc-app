@@ -9,7 +9,7 @@ export default class Register extends Component {
     return (
       <div span={12} className="container-register">
         <div className="info-container">
-          <h1 className="login-title">Create Account</h1>
+          <h1 className="register-title">Create Account</h1>
           <div className="social-container">
             <div className="social-item">
               <TiSocialFacebook size={30} />

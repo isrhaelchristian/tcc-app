@@ -9,6 +9,24 @@
   justify-content: center;
 }
 
+.small {
+  width: 12vw;
+  height: 6vh;
+  border-radius: 3vh;
+}
+
+.default {
+  width: 16vw;
+  height: 8vh;
+  border-radius: 4vh;
+}
+
+.larger {
+  width: 22vw;
+  height: 12vh;
+  border-radius: 6vh;
+}
+
 .btn-text {
   color: #FFFFFF;
   font-size: 20px;

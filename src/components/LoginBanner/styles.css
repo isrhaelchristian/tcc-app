@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   padding-left: 10vw;
   padding-right: 10vw;
