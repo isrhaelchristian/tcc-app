@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Form, Icon, Input } from "antd";
 import Button from "../Button";
+import { css } from "aphrodite";
+import styles from "./styles";
 
 class LoginForm extends Component {
   handleSubmit = e => {
@@ -15,8 +17,8 @@ class LoginForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="form">
-        <Form.Item className="form-item">
+      <Form onSubmit={this.handleSubmit} className={css(styles.form)}>
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("userName", {
             rules: [{ required: true, message: "Please input your username!" }]
           })(
@@ -26,7 +28,7 @@ class LoginForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item className="form-item">
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("password", {
             rules: [{ required: true, message: "Please input your Password!" }]
           })(
@@ -38,13 +40,13 @@ class LoginForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item className="form-item">
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("remember", {
             valuePropName: "checked",
             initialValue: true
           })(
-            <div className="login-actions">
-              <a className="login-forgot" href="https://">
+            <div className={css(styles.actions)}>
+              <a className={css(styles.forgot)} href="https://">
                 Forgot password
               </a>
               <Button toggle={() => alert("Signup")} text={"Sign In"} />

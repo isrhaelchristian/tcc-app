@@ -8,9 +8,9 @@ import styles from "./styles";
 export default class Login extends Component {
   render() {
     return (
-      <div span={12} className={css(styles.containerLogin)}>
+      <div span={12} className={css(styles.container)}>
         <div className={css(styles.infoContainer)}>
-          <h1 className={css(styles.loginTitle)}>Login</h1>
+          <h1 className={css(styles.title)}>Login</h1>
           <div className={css(styles.socialContainer)}>
             <div className={css(styles.socialItem)}>
               <TiSocialFacebook size={30} />

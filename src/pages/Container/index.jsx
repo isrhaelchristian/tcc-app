@@ -4,8 +4,8 @@ import Login from "../../components/Login";
 import Register from "../../components/Register";
 import LoginBanner from "../../components/LoginBanner";
 import RegisterBanner from "../../components/RegisterBanner";
-
-import "./styles.css";
+import { css } from "aphrodite";
+import styles from "./styles"
 
 export default class Container extends React.PureComponent {
   state = { toggle: true };
@@ -13,16 +13,7 @@ export default class Container extends React.PureComponent {
   render() {
     const { toggle } = this.state;
     return (
-      <div
-        style={{
-          backgroundColor: "#FFF",
-          position: "relative",
-          width: "100vw",
-          height: "100vh",
-          display: "flex",
-          flexDirection: "row"
-        }}
-      >
+      <div className={css(styles.container)}>
         <Trail
           native
           reverse={toggle}

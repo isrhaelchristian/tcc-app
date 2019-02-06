@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Form, Icon, Input } from "antd";
 import Button from "../Button";
+import { css } from "aphrodite";
+import styles from "./styles";
 
 class RegisterForm extends Component {
   handleSubmit = e => {
@@ -15,8 +17,8 @@ class RegisterForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="form">
-        <Form.Item className="form-item">
+      <Form onSubmit={this.handleSubmit} className={css(styles.form)}>
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("userName", {
             rules: [{ required: true, message: "Please input your username!" }]
           })(
@@ -26,7 +28,7 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item className="form-item">
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("email", {
             rules: [{ required: true, message: "Please input your email!" }]
           })(
@@ -36,7 +38,7 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item className="form-item">
+        <Form.Item className={css(styles.formItem)}>
           {getFieldDecorator("password", {
             rules: [{ required: true, message: "Please input your Password!" }]
           })(
@@ -47,13 +49,11 @@ class RegisterForm extends Component {
             />
           )}
         </Form.Item>
-        <Form.Item className="form-item register-actions">
+        <Form.Item className={css(styles.actions)}>
           {getFieldDecorator("remember", {
             valuePropName: "checked",
             initialValue: true
-          })(
-            <Button toggle={() => alert("Signup")} text={"Sign Up"} />
-          )}
+          })(<Button toggle={() => alert("Signup")} text={"Sign Up"} />)}
         </Form.Item>
       </Form>
     );

@@ -2,26 +2,27 @@ import React, { Component } from "react";
 import { WrappedRegisterForm as RegisterForm } from "../RegisterForm";
 import { TiSocialFacebook, TiSocialTwitter } from "react-icons/ti";
 import { IoLogoGoogle } from "react-icons/io";
-import "./styles.css";
+import { css } from "aphrodite";
+import styles from "./styles";
 
 export default class Register extends Component {
   render() {
     return (
-      <div span={12} className="container-register">
-        <div className="info-container">
-          <h1 className="register-title">Create Account</h1>
-          <div className="social-container">
-            <div className="social-item">
+      <div span={12} className={css(styles.container)}>
+        <div className={css(styles.infoContainer)}>
+          <h1 className={css(styles.title)}>Create Account</h1>
+          <div className={css(styles.socialContainer)}>
+            <div className={css(styles.socialItem)}>
               <TiSocialFacebook size={30} />
             </div>
-            <div className="social-item">
+            <div className={css(styles.socialItem)}>
               <TiSocialTwitter size={30} />
             </div>
-            <div className="social-item">
+            <div className={css(styles.socialItem)}>
               <IoLogoGoogle size={30} />
             </div>
           </div>
-          <p className="info-text">or user your email for registration</p>
+          <p className={css(styles.subtitle)}>or user your email for registration</p>
         </div>
         <RegisterForm />
       </div>

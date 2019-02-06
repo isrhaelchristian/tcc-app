@@ -1,8 +1,0 @@
-.box {
-  cursor: pointer;
-  position: relative;
-  width: 50vw;
-  height: 100vh;
-  background-color: #F3FFBD;
-  will-change: transform;
-}

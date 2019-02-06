@@ -1,10 +1,11 @@
 import React from "react";
-import "./styles.css";
+import { css } from "aphrodite";
+import styles from "./styles";
 
 const index = props => {
   return (
-    <div className={"button-sign-up"} onClick={props.toggle}>
-      <p className="btn-text">{props.text}</p>
+    <div className={css(styles.buttonSignUp)} onClick={props.toggle}>
+      <p className={css(styles.btnText)}>{props.text}</p>
     </div>
   );
 };
