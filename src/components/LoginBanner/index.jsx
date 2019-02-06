@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from 'antd';
+import Button from "../Button";
 import "./styles.css";
 
 export default class RegisterBanner extends Component {
@@ -8,12 +8,9 @@ export default class RegisterBanner extends Component {
       <div className="container-login-banner">
         <h2 className="title">Hello, Friend!</h2>
         <p className="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
-        <Button type="primary" shape="round" size={45}>Sign In</Button>
+        <Button toggle={this.props.toggle} text={"Sign In"}/>
       </div>
     );
   }

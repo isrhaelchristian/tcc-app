@@ -8,7 +8,7 @@ import RegisterBanner from "../../components/RegisterBanner";
 import "./styles.css";
 
 export default class Container extends React.PureComponent {
-  state = { toggle: true,};
+  state = { toggle: true };
   toggle = () => this.setState(state => ({ toggle: !state.toggle }));
   render() {
     const { toggle } = this.state;
@@ -33,7 +33,6 @@ export default class Container extends React.PureComponent {
         >
           {item => ({ x, opacity }) => (
             <animated.div
-              onClick={this.toggle}
               style={{
                 opacity,
                 transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
@@ -47,13 +46,12 @@ export default class Container extends React.PureComponent {
           native
           reverse={!toggle}
           initial={null}
-          items={!toggle ? <RegisterBanner /> : <LoginBanner />}
+          items={!toggle ? <RegisterBanner toggle={this.toggle}/> : <LoginBanner toggle={this.toggle}/>}
           from={{ opacity: 0, x: 0 }}
           to={{ opacity: !toggle ? 1 : 1, x: toggle ? 0 : -100 }}
         >
           {item => ({ x, opacity }) => (
             <animated.div
-              onClick={this.toggle}
               style={{
                 opacity,
                 transform: x.interpolate(x => `translate3d(${x}%,0,0)`)
