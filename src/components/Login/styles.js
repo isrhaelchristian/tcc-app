@@ -7,7 +7,7 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    width: isMobile ? "100vw" : "50vw",
+    width: isMobile ? "100vw" : "60vw",
     height: isMobile ? "60vh" : "100vh",
     paddingLeft: '10vw',
     paddingRight: '10vw',

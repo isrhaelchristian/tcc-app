@@ -26,7 +26,7 @@ export default class Container extends React.PureComponent {
           to={
             isMobile
               ? { opacity: toggle ? 1 : 1, y: toggle ? 0 : 60 }
-              : { opacity: toggle ? 1 : 1, x: toggle ? 0 : 100 }
+              : { opacity: toggle ? 1 : 1, x: toggle ? 0 : 66 }
           }
         >
           {item => ({ y, x, opacity }) => (
@@ -57,7 +57,7 @@ export default class Container extends React.PureComponent {
           to={
             isMobile
               ? { opacity: !toggle ? 1 : 1, y: toggle ? 0 : -150 }
-              : { opacity: !toggle ? 1 : 1, x: toggle ? 0 : -100 }
+              : { opacity: !toggle ? 1 : 1, x: toggle ? 0 : -150 }
           }
         >
           {item => ({ y, x, opacity }) => (
