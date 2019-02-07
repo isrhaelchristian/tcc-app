@@ -1,10 +1,13 @@
 import {
   StyleSheet
 } from 'aphrodite';
+import {
+  isMobile
+} from "react-device-detect";
 
 const styles = StyleSheet.create({
   container: {
-    width: "50vw",
+    width: isMobile ? "100vw" : "50vw",
     height: '100vh',
     paddingLeft: '10vw',
     paddingRight: '10vw',

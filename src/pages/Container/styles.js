@@ -10,6 +10,14 @@ const styles = StyleSheet.create({
     height: "100vh",
     display: "flex",
     flexDirection: "row"
+  },
+  containerMobile: {
+    backgroundColor: "#FFF",
+    position: "relative",
+    width: "100vw",
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column"
   }
 });
 
