@@ -8,15 +8,15 @@ import {
 const styles = StyleSheet.create({
   container: {
     width: isMobile ? "100vw" : "50vw",
-    height: '100vh',
+    height: isMobile ? "40vh" : "100vh",
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     flexDirection: 'column',
     paddingLeft: '10vw',
     paddingRight: '10vw',
-    paddingTop: '20vh',
-    paddingBottom: '40vh',
+    paddingTop: isMobile ? '5vh' : '20vh',
+    paddingBottom:  isMobile ? '5vh' : '40vh',
     backgroundColor: '#3AB19B',
   },
   title: {

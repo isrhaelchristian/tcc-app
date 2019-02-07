@@ -8,11 +8,11 @@ import {
 const styles = StyleSheet.create({
   container: {
     width: isMobile ? "100vw" : "50vw",
-    height: '100vh',
+    height: isMobile ? "60vh" : "100vh",
     paddingLeft: '10vw',
     paddingRight: '10vw',
-    paddingTop: '10vh',
-    paddingBottom: '10vh',
+    paddingTop: isMobile ? '2vh' : '10vh',
+    paddingBottom:  isMobile ? '2vh' : '10vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

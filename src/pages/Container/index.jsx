@@ -25,7 +25,7 @@ export default class Container extends React.PureComponent {
           from={isMobile ? { opacity: 0, y: -100 } : { opacity: 0, x: -100 }}
           to={
             isMobile
-              ? { opacity: toggle ? 1 : 1, y: toggle ? 0 : 100 }
+              ? { opacity: toggle ? 1 : 1, y: toggle ? 0 : 60 }
               : { opacity: toggle ? 1 : 1, x: toggle ? 0 : 100 }
           }
         >
@@ -34,7 +34,7 @@ export default class Container extends React.PureComponent {
               style={{
                 opacity,
                 transform: isMobile
-                  ? y.interpolate(y => `translate3d(${y}%,0,0)`)
+                  ? y.interpolate(y => `translate3d(0,${y}%,0)`)
                   : x.interpolate(x => `translate3d(${x}%,0,0)`)
               }}
             >
@@ -56,7 +56,7 @@ export default class Container extends React.PureComponent {
           from={isMobile ? { opacity: 0, y: 0 } : { opacity: 0, x: 0 }}
           to={
             isMobile
-              ? { opacity: !toggle ? 1 : 1, y: toggle ? 0 : -100 }
+              ? { opacity: !toggle ? 1 : 1, y: toggle ? 0 : -150 }
               : { opacity: !toggle ? 1 : 1, x: toggle ? 0 : -100 }
           }
         >
@@ -65,7 +65,7 @@ export default class Container extends React.PureComponent {
               style={{
                 opacity,
                 transform: isMobile
-                  ? y.interpolate(y => `translate3d(${y}%,0,0)`)
+                  ? y.interpolate(y => `translate3d(0,${y}%,0)`)
                   : x.interpolate(x => `translate3d(${x}%,0,0)`)
               }}
             >
