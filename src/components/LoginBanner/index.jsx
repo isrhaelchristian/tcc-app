@@ -11,7 +11,7 @@ export default class RegisterBanner extends Component {
         <p className={css(styles.subtitle)}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
-        <Button toggle={this.props.toggle} text={"Sign In"} />
+        <Button toggle={this.props.toggle} text={"Sign Up"} />
       </div>
     );
   }

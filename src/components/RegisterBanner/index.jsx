@@ -12,7 +12,7 @@ export default class RegisterBanner extends Component {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
-        <Button toggle={this.props.toggle} text={"Sign Up"}/>
+        <Button toggle={this.props.toggle} text={"Sign In"}/>
       </div>
     );
   }
