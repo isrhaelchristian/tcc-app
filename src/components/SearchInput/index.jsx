@@ -7,7 +7,7 @@ export default class index extends Component {
   render() {
     return (
       <div className={css(styles.container)}>
-        <input placeholder="search" type="text" />
+        <input className={css(styles.input)} placeholder="search" type="text" />
         <select>
           <option>All</option>
           <option>Animals</option>
