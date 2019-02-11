@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
   },
   itemText: {
     fontWeight: '500',
-    margin: 0
+    margin: 0,
+    fontFamily: 'proxima-nova, sans-serif',
   }
 })
 
