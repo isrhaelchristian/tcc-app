@@ -9,7 +9,7 @@ export default class ActionsHeader extends Component {
       <div className={css(styles.container)}>
         <FiMessageCircle size={30} />
         <FiUser size={30} />
-        <p className={css(styles.text)}>Entrar</p>
+        <a className={css(styles.text)}>Entrar</a>
       </div>
     )
   }

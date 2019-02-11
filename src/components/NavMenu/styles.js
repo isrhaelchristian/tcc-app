@@ -1,4 +1,5 @@
 import { StyleSheet } from 'aphrodite';
+import { fonts, colors } from '../../settings';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,9 +18,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   itemText: {
-    fontWeight: '500',
+    color: colors.dark,
+    fontWeight: fonts.mediumWeight,
     margin: 0,
-    fontFamily: 'proxima-nova, sans-serif',
+    fontFamily: fonts.family,
+    ':hover': {
+      display: 'inline-block',
+      borderBottom: '1px solid transparent',
+      transition: 'border 0.2s ease 0.2s',
+      borderBottomColor: colors.primary
+    }
   }
 })
 

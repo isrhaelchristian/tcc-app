@@ -1,4 +1,5 @@
 import { StyleSheet } from 'aphrodite';
+import { fonts, colors } from '../../settings';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,8 +11,10 @@ const styles = StyleSheet.create({
     width: '10%',
   },
   text: {
-    fontWeight: '500',
-    margin: 0
+    color: colors.dark,
+    fontWeight: fonts.mediumWeight,
+    margin: 0,
+    fontFamily: fonts.family,
   }
 });
 
