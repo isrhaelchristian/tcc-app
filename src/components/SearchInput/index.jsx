@@ -8,13 +8,13 @@ export default class index extends Component {
     return (
       <div className={css(styles.container)}>
         <input className={css(styles.input)} placeholder="search" type="text" />
-        <select>
+        <select className={css(styles.select)}>
           <option>All</option>
           <option>Animals</option>
           <option>Shelters</option>
           <option>People</option>
         </select>
-        <button>search</button>
+        <button className={css(styles.button)}>search</button>
       </div>
     )
   }
