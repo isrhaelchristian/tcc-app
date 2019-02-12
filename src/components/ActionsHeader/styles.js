@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     width: '10%',
   },
   text: {
-    color: colors.dark,
+    color: colors.darker,
     fontWeight: fonts.mediumWeight,
     margin: 0,
     fontFamily: fonts.family,

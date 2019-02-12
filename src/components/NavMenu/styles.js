@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   itemText: {
-    color: colors.dark,
+    color: colors.darker,
     fontWeight: fonts.mediumWeight,
     margin: 0,
     fontFamily: fonts.family,
