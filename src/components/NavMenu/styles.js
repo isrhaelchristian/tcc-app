@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
       display: 'inline-block',
       borderBottom: '1px solid transparent',
       transition: 'border 0.2s ease 0.2s',
-      borderBottomColor: colors.primary
+      borderBottomColor: colors.primary,
     }
   }
 })

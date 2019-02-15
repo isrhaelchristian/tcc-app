@@ -11,10 +11,9 @@ export default class index extends Component {
       <div className={css(styles.container)}>
         <input className={css(styles.input)} placeholder="search" type="text" />
         <select className={css(styles.select)}>
-          <option>All</option>
-          <option>Animals</option>
-          <option>Shelters</option>
-          <option>People</option>
+          <option className={css(styles.selectItem)}>em animais</option>
+          <option className={css(styles.selectItem)}>em brigos</option>
+          <option className={css(styles.selectItem)}>em pessoas</option>
         </select>
         <button className={css(styles.button)}><FiSearch size={20} color={colors.darker}/></button>
       </div>

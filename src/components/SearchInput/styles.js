@@ -31,6 +31,12 @@ const styles = StyleSheet.create({
     borderBottom: `1px solid ${colors.dark}`,
     borderTop: `1px solid ${colors.dark}`,
   },
+  selectItem: {
+    ':hover': {
+      color: colors.primary,
+      backgroundColor: colors.white
+    }
+  },
   button: {
     height: '100%',
     width: '12%',
