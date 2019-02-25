@@ -2,6 +2,8 @@ import {
   StyleSheet
 } from 'aphrodite';
 
+const backHome = require('../../assets/img/header-back.jpg')
+
 const styles = StyleSheet.create({
   container: {
     width: '100vw',
@@ -9,6 +11,18 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignContent: 'center',
     justifyContent: 'center',
+    backgroundImage: `url(${backHome})`,
+    backgroundSize: '100vw 100vh'
+  },
+  header: {
+    width: '100vw',
+    height: '8vh',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingLeft: '1vw',
+    paddingRight: '1vw'
   }
 });
 

@@ -29,6 +29,9 @@ export default class NavMenu extends Component {
         <div className={css(styles.menuItem)}>
           <a href="#" className={css(styles.itemText)}>Sobre Nós</a>
         </div>
+        <div className={css(styles.menuItem)}>
+          <a href="#" className={css(styles.itemText)}>Cadastrar / Entrar</a>
+        </div>
       </div>
     );
   }
