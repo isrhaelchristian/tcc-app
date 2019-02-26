@@ -1,6 +1,7 @@
 import {
   StyleSheet
 } from 'aphrodite';
+import { fonts, colors } from '../../settings';
 
 const styles = StyleSheet.create({
   form: {
@@ -13,9 +14,12 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     paddingLeft: 30,
     paddingRight: 30,
+    borderRadius: 5,
+    boxShadow: 'box-shadow: 0 0 0 0 rgba(0,0,0,0.80)'
   },
   formTitle:{
-    color: '#000',
+    color: colors.darker,
+    fontFamily: fonts.family,
     fontSize: '22px',
     fontWeight: 'bold',
   },  

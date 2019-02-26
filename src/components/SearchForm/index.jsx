@@ -52,14 +52,14 @@ class SearchForm extends Component {
     return (
       <Form onSubmit={this.handleSubmit} className={css(styles.form)}>
         <p className={css(styles.formTitle)}>Busque seu próximo melhor amigo.</p>
-        <Form.Item className={css(styles.formItem)} label="Onde">
+        <Form.Item className={css(styles.formItem)} label="Onde" colon={false}>
           {getFieldDecorator("where")(
             <Input
               placeholder="Em qualquer lugar"
             />
           )}
         </Form.Item>
-        <Form.Item className={css(styles.formItem)} label="Espécie">
+        <Form.Item className={css(styles.formItem)} label="Espécie" colon={false}>
           {getFieldDecorator("kind")(
             <Select
               value={this.state.kind}
@@ -71,7 +71,7 @@ class SearchForm extends Component {
             </Select>
           )}
         </Form.Item>
-        <Form.Item className={css(styles.formItem)} label="Sexo">
+        <Form.Item className={css(styles.formItem)} label="Sexo" colon={false}>
           {getFieldDecorator("gender")(
             <Select
               value={this.state.gender}
