@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     justifyContent: 'center',
     backgroundImage: `url(${backHome})`,
-    backgroundSize: '100vw 100vh'
+    backgroundSize: '100vw 100vh',
+    flexDirection: 'column',
   },
   header: {
     width: '100vw',
@@ -22,6 +23,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingLeft: '1vw',
+    paddingRight: '1vw'
+  },
+  content: {
+    width: '100vw',
+    height: '92vh',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingLeft: '10vw',
     paddingRight: '1vw'
   }
 });

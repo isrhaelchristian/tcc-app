@@ -18,19 +18,19 @@ export default class NavMenu extends Component {
     return (
       <div className={css(styles.container)}>
         <div className={css(styles.menuItem)}>
-          <a href="#" className={css(styles.itemText)}>Anunciar</a>
+          <p href="#" className={css(styles.itemText)}>Anunciar</p>
         </div>
         <div className={css(styles.menuItem)}>
-          <a href="#" className={css(styles.itemText)}>Abrigos</a>
+          <p href="#" className={css(styles.itemText)}>Abrigos</p>
         </div>
         <div className={css(styles.menuItem)}>
-          <a href="#" className={css(styles.itemText)}>Fórum</a>
+          <p href="#" className={css(styles.itemText)}>Fórum</p>
         </div>
         <div className={css(styles.menuItem)}>
-          <a href="#" className={css(styles.itemText)}>Sobre Nós</a>
+          <p href="#" className={css(styles.itemText)}>Sobre Nós</p>
         </div>
         <div className={css(styles.menuItem)}>
-          <a href="#" className={css(styles.itemText)}>Cadastrar / Entrar</a>
+          <p href="#" className={css(styles.itemText)}>Cadastrar / Entrar</p>
         </div>
       </div>
     );
