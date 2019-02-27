@@ -51,7 +51,7 @@ class SearchForm extends Component {
     const { getFieldDecorator } = this.props.form;
     return (
       <Form onSubmit={this.handleSubmit} className={css(styles.form)}>
-        <p className={css(styles.formTitle)}>Busque seu próximo melhor amigo.</p>
+        <p className={css(styles.formTitle)}>Encontre seu próximo melhor amigo.</p>
         <Form.Item className={css(styles.formItem)} label="Onde" colon={false}>
           {getFieldDecorator("where")(
             <Input
@@ -86,7 +86,11 @@ class SearchForm extends Component {
           {getFieldDecorator("remember", {
             valuePropName: "checked",
             initialValue: true
-          })(<Button toggle={() => alert("Signup")} text={"Buscar"} />)}
+          })(
+            <button className={css(styles.buttonSignUp)} onClick={() => console.log("sd")}>
+              <p className={css(styles.btnText)}>{"Entrar"}</p>
+            </button>
+          )}
         </Form.Item>
       </Form>
     );
