@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { css } from "aphrodite";
 
 import Header from '../../components/HeaderSearch';
+import SearchOptions from '../../components/SearchOptions';
 
 import styles from "./styles";
 
@@ -13,6 +14,7 @@ export default class SearchResults extends Component {
           <Header />
         </div>
         <div className={css(styles.content)}>
+          <SearchOptions />
         </div>
       </div>
     );

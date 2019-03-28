@@ -1,8 +1,7 @@
 import {
   StyleSheet
 } from 'aphrodite';
-
-const backHome = require('../../assets/img/header-back.jpg')
+import { fonts, colors } from '../../settings';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,17 +20,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingLeft: '1vw',
-    paddingRight: '1vw'
+    paddingRight: '1vw',
+    borderBottom: '1px solid',
+    borderBottomColor: colors.dark,
   },
   content: {
     width: '100vw',
     height: '92vh',
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
-    paddingLeft: '10vw',
-    paddingRight: '1vw'
   }
 });
 
