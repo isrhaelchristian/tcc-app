@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { css } from "aphrodite";
 
-import { Card, Icon } from "antd";
+import { Card, Icon, Tooltip } from "antd";
 
 import styles from "./styles";
 
@@ -14,10 +14,12 @@ export default class SearchResultItem extends Component {
         cover={<img alt="example" src={item.img} />}
         bodyStyle={{ padding: "12px" }}
         actions={[
-          <Icon type="heart" />,
-          <Icon type="environment" />,
-          <Icon type="message" />,
-          <Icon type="share-alt" />
+          <Tooltip title="Favoritar">
+            <Icon type="heart" />
+          </Tooltip>,
+          <Tooltip title="Ver Detalhes">
+            <Icon type="eye" />
+          </Tooltip>
         ]}
       >
         <div className={css(styles.cardBody)}>
