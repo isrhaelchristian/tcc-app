@@ -1,7 +1,7 @@
 import {
   StyleSheet
 } from 'aphrodite';
-import { fonts, colors } from '../../settings';
+import { colors } from '../../settings';
 
 const styles = StyleSheet.create({
   container: {

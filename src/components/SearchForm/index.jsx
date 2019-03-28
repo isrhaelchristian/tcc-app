@@ -6,29 +6,28 @@ import styles from "./styles";
 const { Option } = Select;
 
 class SearchForm extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
     const value = props.value || {};
     this.state = {
-      kind: value.kind || 'dog',
-      gender: value.gender || 'male',
+      kind: value.kind || "dog",
+      gender: value.gender || "male"
     };
   }
 
-  handleKindChange = (kind) => {
-    if (!('value' in this.props)) {
+  handleKindChange = kind => {
+    if (!("value" in this.props)) {
       this.setState({ kind });
     }
     this.triggerChange({ kind });
-  }
+  };
 
-  handleGenderChange = (gender) => {
-    if (!('value' in this.props)) {
+  handleGenderChange = gender => {
+    if (!("value" in this.props)) {
       this.setState({ gender });
     }
     this.triggerChange({ gender });
-  }
+  };
 
   handleSubmit = e => {
     e.preventDefault();
@@ -39,31 +38,32 @@ class SearchForm extends Component {
     });
   };
 
-  triggerChange = (changedValue) => {
+  triggerChange = changedValue => {
     const onChange = this.props.onChange;
     if (onChange) {
       onChange(Object.assign({}, this.state, changedValue));
     }
-  }
+  };
 
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
       <Form onSubmit={this.handleSubmit} className={css(styles.form)}>
-        <p className={css(styles.formTitle)}>Encontre seu próximo melhor amigo.</p>
+        <p className={css(styles.formTitle)}>
+          Encontre seu próximo melhor amigo.
+        </p>
         <Form.Item className={css(styles.formItem)} label="Onde" colon={false}>
           {getFieldDecorator("where")(
-            <Input
-              placeholder="Em qualquer lugar"
-            />
+            <Input placeholder="Em qualquer lugar" />
           )}
         </Form.Item>
-        <Form.Item className={css(styles.formItem)} label="Espécie" colon={false}>
+        <Form.Item
+          className={css(styles.formItem)}
+          label="Espécie"
+          colon={false}
+        >
           {getFieldDecorator("kind")(
-            <Select
-              value={this.state.kind}
-              onChange={this.handleKindChange}
-            >
+            <Select value={this.state.kind} onChange={this.handleKindChange}>
               <Option value="dog">Cães</Option>
               <Option value="cat">Gatos</Option>
               <Option value="others">Outros</Option>
@@ -86,7 +86,10 @@ class SearchForm extends Component {
             valuePropName: "checked",
             initialValue: true
           })(
-            <button className={css(styles.buttonSignUp)} onClick={() => console.log("sd")}>
+            <button
+              className={css(styles.buttonSignUp)}
+              onClick={() => console.log("sd")}
+            >
               <p className={css(styles.btnText)}>{"Entrar"}</p>
             </button>
           )}

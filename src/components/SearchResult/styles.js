@@ -1,7 +1,5 @@
-import {
-  StyleSheet
-} from 'aphrodite';
-import { fonts, colors } from '../../settings';
+import { StyleSheet } from "aphrodite";
+import { fonts } from "../../settings";
 
 const styles = StyleSheet.create({
   resultContainer: {
@@ -12,10 +10,10 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "5vh",
     display: "flex",
-    flexDirection: 'row',
+    flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingLeft: "5vw",
+    paddingLeft: "5vw"
   },
   resultTitle: {
     fontFamily: fonts.family,
@@ -27,11 +25,11 @@ const styles = StyleSheet.create({
     maxWidth: "100vw",
     overflowX: "unset",
     display: "flex",
-    flexDirection: 'row',
-    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "flex-start",
     flexWrap: "wrap",
-    paddingLeft: "5vw",
-  },
+    paddingLeft: "5vw"
+  }
 });
 
 export default styles;

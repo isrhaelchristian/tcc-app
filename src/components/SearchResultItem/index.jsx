@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
-import { css } from 'aphrodite'
+import React, { Component } from "react";
+import { css } from "aphrodite";
 
-import { Card, Icon, Avatar } from 'antd';
+import { Card, Icon } from "antd";
 
-import styles from './styles'
-
-const { Meta } = Card;
+import styles from "./styles";
 
 export default class SearchResultItem extends Component {
   render() {
@@ -14,13 +12,29 @@ export default class SearchResultItem extends Component {
       <Card
         className={css(styles.container)}
         cover={<img alt="example" src={item.img} />}
-        actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
+        bodyStyle={{ padding: "12px" }}
+        actions={[
+          <Icon type="heart" />,
+          <Icon type="environment" />,
+          <Icon type="message" />,
+          <Icon type="share-alt" />
+        ]}
       >
-        <Meta
-          avatar={<Avatar src={item.img} />}
-          title={item.title}
-          description="This is the description"
-        />
+        <div className={css(styles.cardBody)}>
+          <p className={css(styles.cardTitle)}>{item.title}</p>
+          <div className={css(styles.cardTagsContainer)}>
+            <div className={css(styles.tagContainer)}>
+              <p className={css(styles.tagText)}>{item.kind}</p>
+            </div>
+            <div className={css(styles.tagContainer)}>
+              <p className={css(styles.tagText)}>{item.gender}</p>
+            </div>
+            <div className={css(styles.tagContainer)}>
+              <p className={css(styles.tagText)}>{item.age}</p>
+            </div>
+          </div>
+          <p className={css(styles.addressText)}>{item.address}</p>
+        </div>
       </Card>
     );
   }

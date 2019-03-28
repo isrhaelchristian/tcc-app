@@ -1,7 +1,5 @@
-import {
-  StyleSheet
-} from 'aphrodite';
-import { fonts, colors } from '../../settings';
+import { StyleSheet } from "aphrodite";
+import { fonts, colors } from "../../settings";
 
 const styles = StyleSheet.create({
   exploreContainer: {
@@ -13,10 +11,10 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "5vh",
     display: "flex",
-    flexDirection: 'row',
+    flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingLeft: "5vw",
+    paddingLeft: "5vw"
   },
   exploreTitle: {
     fontFamily: fonts.family,
@@ -28,16 +26,16 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "15vh",
     display: "flex",
-    flexDirection: 'row',
+    flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingLeft: "5vw",
+    paddingLeft: "5vw"
   },
   exploreItemContainer: {
     width: "15vw",
     height: "10vh",
     display: "flex",
-    flexDirection: 'row',
+    flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     border: "1px solid",
@@ -53,15 +51,15 @@ const styles = StyleSheet.create({
   },
   exploreItemImg: {
     width: "7vw",
-    height: "10vh",
+    height: "10vh"
   },
   exploreItemTitleContainer: {
     width: "8vw",
     height: "10vh",
     display: "flex",
-    flexDirection: 'row',
+    flexDirection: "row",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center"
   },
   exploreItemTitle: {
     color: colors.darker,
