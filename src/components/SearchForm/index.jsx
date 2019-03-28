@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Form, Select, Input } from "antd";
-import Button from "../Button";
 import { css } from "aphrodite";
 import styles from "./styles";
 
