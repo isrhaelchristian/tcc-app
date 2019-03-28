@@ -4,10 +4,11 @@ import { css } from "aphrodite";
 import Header from '../../components/HeaderSearch';
 import SearchOptions from '../../components/SearchOptions';
 import SearchExplore from '../../components/SearchExplore';
+import SearchResult from '../../components/SearchResult';
 
 import styles from "./styles";
 
-export default class SearchResults extends Component {
+export default class Search extends Component {
   render() {
     return (
       <div className={css(styles.container)}>
@@ -17,6 +18,7 @@ export default class SearchResults extends Component {
         <div className={css(styles.content)}>
           <SearchOptions />
           <SearchExplore />
+          <SearchResult />
         </div>
       </div>
     );

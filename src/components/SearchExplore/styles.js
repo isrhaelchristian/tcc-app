@@ -6,7 +6,7 @@ import { fonts, colors } from '../../settings';
 const styles = StyleSheet.create({
   exploreContainer: {
     width: "100%",
-    height: "20h",
+    height: "20vh",
     marginTop: "5vh"
   },
   exploreTitleContainer: {
