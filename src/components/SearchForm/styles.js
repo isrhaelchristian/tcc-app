@@ -5,7 +5,7 @@ import { fonts, colors } from '../../settings';
 
 const styles = StyleSheet.create({
   form: {
-    width: '30vw',
+    width: '25vw',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -15,7 +15,10 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
     paddingRight: 30,
     borderRadius: 5,
-    boxShadow: 'box-shadow: 0 0 0 0 rgba(0,0,0,0.80)'
+    boxShadow: 'box-shadow: 0 0 0 0 rgba(0,0,0,0.80)',
+    "@media (max-width: 600px)": {
+      width: '80vw',
+    }
   },
   formTitle: {
     color: colors.darker,
@@ -35,13 +38,17 @@ const styles = StyleSheet.create({
   },
   buttonSignUp: {
     width: '8vw',
-    height: '8vh',
+    height: '6vh',
     borderRadius: '1vh',
     backgroundColor: '#3AB19B',
     border: '2px solid #FFFFFF',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    "@media (max-width: 600px)": {
+      width: '40vw',
+      height: '8vh',
+    }
   },
   btnText: {
     color: '#FFFFFF',

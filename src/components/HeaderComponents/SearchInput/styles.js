@@ -1,19 +1,21 @@
 import {
   StyleSheet
 } from 'aphrodite';
-import { colors } from '../../settings';
+import { colors } from '../../../settings';
 
 const styles = StyleSheet.create({
   container: {
-    width: '35%',
+    width: '50%',
     height: '60%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
+    paddingRight: '25%'
   },
   input: {
     height: '100%',
+    width: '85%',
     paddingLeft: 10,
     border: 0,
     borderTopLeftRadius: 7,
@@ -25,21 +27,9 @@ const styles = StyleSheet.create({
       color: colors.dark,
     }
   },
-  select: {
-    height: '100%',
-    border: 0,
-    borderBottom: `1px solid ${colors.dark}`,
-    borderTop: `1px solid ${colors.dark}`,
-  },
-  selectItem: {
-    ':hover': {
-      color: colors.primary,
-      backgroundColor: colors.white
-    }
-  },
   button: {
     height: '100%',
-    width: '12%',
+    width: '15%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

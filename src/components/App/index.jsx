@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Container from "../../pages/Container";
 import Home from "../../pages/Home";
+import SearchResult from "../../pages/SearchResult";
 import './styles.css'
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <Switch>
         <Route path={"/"} exact component={Home} />
         <Route path={"/login"} exact component={Container} />
+        <Route path={"/search"} exact component={SearchResult} />
       </Switch>
     );
   }
