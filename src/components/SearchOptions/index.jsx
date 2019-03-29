@@ -3,6 +3,7 @@ import { css } from "aphrodite";
 
 import { Popover, Icon } from 'antd';
 
+import PlacesInput from '../SearchComponents/PlacesInput'
 import GenderSelect from '../SearchComponents/GenderSelect'
 import KindSelect from '../SearchComponents/KindSelect'
 
@@ -45,7 +46,7 @@ export default class NavMenu extends Component {
     return (
       <div className={css(styles.container)}>
         <Popover
-          content={<GenderSelect gender={this.state.gender} handleGenderChange={this.handleGenderChange} />}
+          content={<PlacesInput />}
           title={<PopoverTitle text={"Localidade"} hidePopover={() => this.hidePopover("popoverLocality")} />}
           trigger="click"
           visible={this.state.popoverLocality}
@@ -80,7 +81,7 @@ const PopoverTitle = props => {
   return (
     <div className={css(styles.popoverHeader)}>
       <p className={css(styles.popoverTitle)}>{props.text}</p>
-      <a><Icon type="close" onClick={props.hidePopover} /></a>
+      <Icon type="close" onClick={props.hidePopover} />
     </div>
   );
 };
@@ -89,7 +90,7 @@ const PopoverGender = props => {
   return (
     <div className={css(styles.popoverContent)}>
       <GenderSelect gender={props.gender} handleGenderChange={props.handleGenderChange} />
-      <button className={css(styles.popoverApplyButton)}><a className={css(styles.popoverApplyText)}>Aplicar</a></button>
+      <button className={css(styles.popoverApplyButton)}><p className={css(styles.popoverApplyText)}>Aplicar</p></button>
     </div>
   );
 };
@@ -98,7 +99,7 @@ const PopoverKind = props => {
   return (
     <div className={css(styles.popoverContent)}>
       <KindSelect kind={props.kind} handleKindChange={props.handleKindChange} />
-      <button className={css(styles.popoverApplyButton)}><a className={css(styles.popoverApplyText)}>Aplicar</a></button>
+      <button className={css(styles.popoverApplyButton)}><p className={css(styles.popoverApplyText)}>Aplicar</p></button>
     </div>
   );
 };
