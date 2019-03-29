@@ -1,35 +1,40 @@
 import {
   StyleSheet
 } from 'aphrodite';
-import { colors } from '../../settings';
 
 const styles = StyleSheet.create({
   container: {
-    width: '100vw',
-    height: "60vh",
+    width: '30vw',
+    height: "50vh",
     display: 'flex',
     alignContent: 'center',
     justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  mainImgContainer: {
+    width: '100%',
+    height: "70%",
+    overflow: "hidden"
+  },
+  mainImg: {
+    width: '100%',
+    height: 'auto',
+  },
+  carouselContainer: {
+    width: "100%",
+    height: "30%",
+    display: 'flex',
     flexDirection: 'row',
   },
-  gridBg: {
-    width: "50%",
+  thumbnailImgs: {
+    width: "20%",
     height: "100%",
-    overflow: "hidden"
+    overflow: 'hidden',
   },
-  gridSm: {
-    width: "25%",
+  thumbail: {
+    width: 'auto',
     height: "100%",
-    overflow: "hidden"
-  },
-  imgBg: {
-    width: "100%",
-    height: "auto"
-  },
-  imgSm: {
-    width: "100%",
-    height: "50%",
-  },
+  }
 });
 
 export default styles;

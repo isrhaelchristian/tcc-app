@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { css } from "aphrodite";
 
-import Lightbox from 'react-images';
-
 import styles from "./styles";
 
 export default class ImagesGrid extends Component {
@@ -29,12 +27,20 @@ export default class ImagesGrid extends Component {
       ]
     }
   }
+
   render() {
     return (
       <div className={css(styles.container)}>
-        <Lightbox
-          images={this.state.images}
-        />
+        <div className={css(styles.mainImgContainer)}>
+          <img alt="" className={css(styles.mainImg)} src="https://a0.muscache.com/im/pictures/16f8c559-8767-48d6-928a-8832aa2dc0a1.jpg?aki_policy=xx_large" />
+        </div>
+        <div className={css(styles.carouselContainer)}>
+          {this.state.images.map(img => (
+            <div key={img.src} className={css(styles.thumbnailImgs)}>
+              <img alt="" src={img.src} className={css(styles.thumbail)} />
+            </div>
+          ))}
+        </div>
       </div>
     )
   }
