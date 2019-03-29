@@ -54,7 +54,7 @@ export default class NavMenu extends Component {
           <button className={css(styles.optionsItem)}>Localicade</button>
         </Popover>
         <Popover
-          content={<GenderSelect gender={this.state.gender} handleGenderChange={this.handleGenderChange} />}
+          content={<PopoverGender gender={this.state.gender} handleGenderChange={this.handleGenderChange} />}
           title={<PopoverTitle text={"Espécie"} hidePopover={() => this.hidePopover("popoverKind")} />}
           trigger="click"
           visible={this.state.popoverKind}
@@ -63,7 +63,7 @@ export default class NavMenu extends Component {
           <button className={css(styles.optionsItem)}>Espécie</button>
         </Popover>
         <Popover
-          content={<KindSelect kind={this.state.kind} handleKindChange={this.handleKindChange} />}
+          content={<PopoverKind kind={this.state.kind} handleKindChange={this.handleKindChange} />}
           title={<PopoverTitle text={"Sexo"} hidePopover={() => this.hidePopover("popoverGender")} />}
           trigger="click"
           visible={this.state.popoverGender}
@@ -80,7 +80,25 @@ const PopoverTitle = props => {
   return (
     <div className={css(styles.popoverHeader)}>
       <p className={css(styles.popoverTitle)}>{props.text}</p>
-      <Icon type="close" onClick={props.hidePopover} />
+      <a><Icon type="close" onClick={props.hidePopover} /></a>
+    </div>
+  );
+};
+
+const PopoverGender = props => {
+  return (
+    <div className={css(styles.popoverContent)}>
+      <GenderSelect gender={props.gender} handleGenderChange={props.handleGenderChange} />
+      <button className={css(styles.popoverApplyButton)}><a className={css(styles.popoverApplyText)}>Aplicar</a></button>
+    </div>
+  );
+};
+
+const PopoverKind = props => {
+  return (
+    <div className={css(styles.popoverContent)}>
+      <KindSelect kind={props.kind} handleKindChange={props.handleKindChange} />
+      <button className={css(styles.popoverApplyButton)}><a className={css(styles.popoverApplyText)}>Aplicar</a></button>
     </div>
   );
 };

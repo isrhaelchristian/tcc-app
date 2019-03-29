@@ -40,6 +40,30 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontFamily: fonts.family,
     color: colors.darker
+  },
+  popoverContent: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: 250,
+    paddingLeft: 20,
+    paddingRight: 20
+  },
+  popoverApplyButton: {
+    backgroundColor: colors.white,
+    border: "0px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  popoverApplyText: {
+    margin: 0,
+    color: colors.primary,
+    fontFamily: fonts.family,
+    ":hover": {
+      color: colors.primaryDark
+    }
   }
 });
 
