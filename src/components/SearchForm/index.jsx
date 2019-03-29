@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import { Form, Select, Input } from "antd";
+import { Form, Input } from "antd";
 import { css } from "aphrodite";
 
 import GenderSelect from '../SearchComponents/GenderSelect'
 import KindSelect from '../SearchComponents/KindSelect'
 
 import styles from "./styles";
-
-const { Option } = Select;
 
 class SearchForm extends Component {
   constructor(props) {

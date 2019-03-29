@@ -45,8 +45,8 @@ export default class NavMenu extends Component {
     return (
       <div className={css(styles.container)}>
         <Popover
-          content={<a onClick={() => this.hidePopover("popoverLocality")}>Close</a>}
-          title={<PopoverTitle text={"Localidade"} hidePopover={() => this.hidePopover("popoverLocality")}/>}
+          content={<GenderSelect gender={this.state.gender} handleGenderChange={this.handleGenderChange} />}
+          title={<PopoverTitle text={"Localidade"} hidePopover={() => this.hidePopover("popoverLocality")} />}
           trigger="click"
           visible={this.state.popoverLocality}
           onVisibleChange={() => this.handleVisiblePopover("popoverLocality")}
@@ -55,7 +55,7 @@ export default class NavMenu extends Component {
         </Popover>
         <Popover
           content={<GenderSelect gender={this.state.gender} handleGenderChange={this.handleGenderChange} />}
-          title={<PopoverTitle text={"Espécie"} hidePopover={() => this.hidePopover("popoverKind")}/>}
+          title={<PopoverTitle text={"Espécie"} hidePopover={() => this.hidePopover("popoverKind")} />}
           trigger="click"
           visible={this.state.popoverKind}
           onVisibleChange={() => this.handleVisiblePopover("popoverKind")}
@@ -64,7 +64,7 @@ export default class NavMenu extends Component {
         </Popover>
         <Popover
           content={<KindSelect kind={this.state.kind} handleKindChange={this.handleKindChange} />}
-          title={<PopoverTitle text={"Sexo"} hidePopover={() => this.hidePopover("popoverGender")}/>}
+          title={<PopoverTitle text={"Sexo"} hidePopover={() => this.hidePopover("popoverGender")} />}
           trigger="click"
           visible={this.state.popoverGender}
           onVisibleChange={() => this.handleVisiblePopover("popoverGender")}
@@ -80,9 +80,7 @@ const PopoverTitle = props => {
   return (
     <div className={css(styles.popoverHeader)}>
       <p className={css(styles.popoverTitle)}>{props.text}</p>
-      <a onClick={props.hidePopover}>
-        <Icon type="close" />
-      </a>
+      <Icon type="close" onClick={props.hidePopover} />
     </div>
   );
 };
