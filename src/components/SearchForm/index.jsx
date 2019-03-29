@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Form, Select, Input } from "antd";
 import { css } from "aphrodite";
+
+import GenderSelect from '../SearchComponents/GenderSelect'
+import KindSelect from '../SearchComponents/KindSelect'
+
 import styles from "./styles";
 
 const { Option } = Select;
@@ -63,22 +67,15 @@ class SearchForm extends Component {
           colon={false}
         >
           {getFieldDecorator("kind")(
-            <Select value={this.state.kind} onChange={this.handleKindChange}>
-              <Option value="dog">Cães</Option>
-              <Option value="cat">Gatos</Option>
-              <Option value="others">Outros</Option>
-            </Select>
+            <KindSelect kind={this.state.kind} handleKindChange={this.handleKindChange} />
           )}
         </Form.Item>
         <Form.Item className={css(styles.formItem)} label="Sexo" colon={false}>
           {getFieldDecorator("gender")(
-            <Select
-              value={this.state.gender}
-              onChange={this.handleGenderChange}
-            >
-              <Option value="male">Macho</Option>
-              <Option value="female">Fêmea</Option>
-            </Select>
+            <GenderSelect
+              gender={this.state.gender}
+              handleGenderChange={this.handleGenderChange}
+            />
           )}
         </Form.Item>
         <Form.Item className={css(styles.actions)}>

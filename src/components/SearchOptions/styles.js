@@ -27,6 +27,19 @@ const styles = StyleSheet.create({
     ":hover": {
       backgroundColor: colors.primaryDark
     }
+  },
+  popoverHeader: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "100%"
+  },
+  popoverTitle: {
+    margin: 0,
+    fontWeight: "bold",
+    fontFamily: fonts.family,
+    color: colors.darker
   }
 });
 
