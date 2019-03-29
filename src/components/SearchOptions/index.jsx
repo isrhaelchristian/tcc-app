@@ -46,7 +46,7 @@ export default class NavMenu extends Component {
     return (
       <div className={css(styles.container)}>
         <Popover
-          content={<PlacesInput />}
+          content={<PopoverPlace />}
           title={<PopoverTitle text={"Localidade"} hidePopover={() => this.hidePopover("popoverLocality")} />}
           trigger="click"
           visible={this.state.popoverLocality}
@@ -82,6 +82,15 @@ const PopoverTitle = props => {
     <div className={css(styles.popoverHeader)}>
       <p className={css(styles.popoverTitle)}>{props.text}</p>
       <Icon type="close" onClick={props.hidePopover} />
+    </div>
+  );
+};
+
+const PopoverPlace = props => {
+  return (
+    <div className={css(styles.popoverContentPlace)}>
+      <PlacesInput />
+      <button className={css(styles.popoverApplyButton)}><p className={css(styles.popoverApplyText)}>Aplicar</p></button>
     </div>
   );
 };

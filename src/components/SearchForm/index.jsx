@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { Form, Input } from "antd";
+import { Form } from "antd";
 import { css } from "aphrodite";
 
+import { withRouter } from 'react-router-dom'
+
+import PlacesInput from '../SearchComponents/PlacesInput'
 import GenderSelect from '../SearchComponents/GenderSelect'
 import KindSelect from '../SearchComponents/KindSelect'
 
@@ -38,6 +41,7 @@ class SearchForm extends Component {
         console.log("Received values of form: ", values);
       }
     });
+    this.props.history.push("/search")
   };
 
   triggerChange = changedValue => {
@@ -56,7 +60,7 @@ class SearchForm extends Component {
         </p>
         <Form.Item className={css(styles.formItem)} label="Onde" colon={false}>
           {getFieldDecorator("where")(
-            <Input placeholder="Em qualquer lugar" />
+            <PlacesInput />
           )}
         </Form.Item>
         <Form.Item
@@ -77,23 +81,15 @@ class SearchForm extends Component {
           )}
         </Form.Item>
         <Form.Item className={css(styles.actions)}>
-          {getFieldDecorator("remember", {
-            valuePropName: "checked",
-            initialValue: true
-          })(
-            <button
-              className={css(styles.buttonSignUp)}
-              onClick={() => console.log("sd")}
-            >
-              <p className={css(styles.btnText)}>{"Entrar"}</p>
-            </button>
-          )}
+          <button
+            className={css(styles.buttonSignUp)}
+          >
+            <p className={css(styles.btnText)}>{"Entrar"}</p>
+          </button>
         </Form.Item>
       </Form>
     );
   }
 }
 
-export const WrappedSearchForm = Form.create({ name: "normal_search" })(
-  SearchForm
-);
+export const WrappedSearchForm = Form.create({ name: "normal_search" })(withRouter(SearchForm));

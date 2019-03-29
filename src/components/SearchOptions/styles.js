@@ -50,6 +50,15 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20
   },
+  popoverContentPlace: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: 400,
+    paddingLeft: 20,
+    paddingRight: 20
+  },
   popoverApplyButton: {
     backgroundColor: colors.white,
     border: "0px",
