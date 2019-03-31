@@ -14,8 +14,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "80%",
     overflow: "hidden",
-    borderRadius: 5,
-    boxShadow: "rgba(0, 0, 0, 0.06) 0px 2px 4px 0px"
+    borderRadius: 5
   },
   mainImg: {
     width: "100%",
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
   thumbail: {
     width: "auto",
     height: "100%",
-    boxShadow: "rgba(0, 0, 0, 0.06) 0px 2px 4px 0px"
+    cursor: "pointer"
   }
 });
 

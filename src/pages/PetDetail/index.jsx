@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { css } from "aphrodite";
 
-import Header from '../../components/HeaderSearch';
-import ImagesGrid from '../../components/ImagesGrid';
+import Header from "../../components/HeaderSearch";
+import ImagesGrid from "../../components/ImagesGrid";
+import InfosPet from "../../components/InfosPet";
 
 import styles from "./styles";
 
@@ -14,7 +15,10 @@ export default class Search extends Component {
           <Header />
         </div>
         <div className={css(styles.content)}>
-          <ImagesGrid />
+          <div className={css(styles.row)}>
+            <InfosPet />
+            <ImagesGrid />
+          </div>
         </div>
       </div>
     );

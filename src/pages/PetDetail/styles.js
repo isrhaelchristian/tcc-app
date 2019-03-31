@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     display: "flex",
     alignContent: "center",
     justifyContent: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+    backgroundColor: colors.dark
   },
   header: {
     width: "100vw",
@@ -19,12 +20,20 @@ const styles = StyleSheet.create({
     paddingLeft: "1vw",
     paddingRight: "1vw",
     borderBottom: "1px solid",
-    borderBottomColor: colors.dark
+    borderBottomColor: colors.dark,
+    backgroundColor: colors.white
   },
   content: {
     width: "100vw",
     display: "flex",
     flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  row: {
+    width: "100vw",
+    display: "flex",
+    flexDirection: "row",
     alignItems: "center",
     justifyContent: "center"
   }
