@@ -132,7 +132,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: "center",
-    width: "33%"
+    width: "33%",
+    cursor: 'pointer',
   },
   statValue: {
     color: colors.darker,
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
   statLabel: {
     color: colors.darker,
     fontFamily: fonts.family,
-    fontSize: "12px"
+    fontSize: "12px",
   }
 });
 
