@@ -4,6 +4,7 @@ import { css } from "aphrodite";
 import Header from "../../components/HeaderSearch";
 import ImagesGrid from "../../components/ImagesGrid";
 import InfosPet from "../../components/InfosPet";
+import ActionsPets from "../../components/ActionsPets";
 
 import styles from "./styles";
 
@@ -18,6 +19,7 @@ export default class Search extends Component {
           <div className={css(styles.row)}>
             <InfosPet />
             <ImagesGrid />
+            <ActionsPets />
           </div>
         </div>
       </div>

@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.family,
     fontSize: "18px",
     fontWeight: "bold",
+    marginBottom: 10
   },
   infos: {
     display: "flex",
