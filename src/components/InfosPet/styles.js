@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
     fontFamily: fonts.family,
     fontSize: "18px",
     fontWeight: "bold",
+  },
+  subtitle: {
+    color: colors.darker,
+    fontFamily: fonts.family,
+    fontSize: "12px",
     marginBottom: 10
   },
   infos: {
@@ -135,6 +140,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "33%",
     cursor: 'pointer',
+    wordWrap: 'break-word',
   },
   statValue: {
     color: colors.darker,

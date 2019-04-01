@@ -14,6 +14,7 @@ export default class InfosPet extends Component {
       <div className={css(styles.container)}>
         <div className={css(styles.infosContainer)}>
           <span className={css(styles.title)}>nome do pet</span>
+          <span className={css(styles.subtitle)}>Fortaleza - Ce</span>
           <div className={css(styles.infos)}>
             <div className={css(styles.infosPet)}>
               <span className={css(styles.label)}>espécie</span>
