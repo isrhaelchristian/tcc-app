@@ -46,6 +46,23 @@ export default class InfosPet extends Component {
               <span className={css(styles.locality)}>são paulo, sp</span>
             </div>
           </div>
+          <div className={css(styles.actionsContainer)}>
+            <button className={css(styles.followButton)}>Seguir publicador</button>
+          </div>
+        </div>
+        <div className={css(styles.statsContainer)}>
+          <div className={css(styles.itemContainer)}>
+            <span className={css(styles.statValue)}>32</span>
+            <span className={css(styles.statLabel)}>Adotados</span>
+          </div>
+          <div className={css(styles.itemContainer)}>
+            <span className={css(styles.statValue)}>32</span>
+            <span className={css(styles.statLabel)}>Disponíveis</span>
+          </div>
+          <div className={css(styles.itemContainer)}>
+            <span className={css(styles.statValue)}>32</span>
+            <span className={css(styles.statLabel)}>Recomendações</span>
+          </div>
         </div>
       </div>
     );

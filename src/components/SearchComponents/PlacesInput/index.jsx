@@ -40,7 +40,7 @@ export default class SearchForm extends Component {
     return (
       <AutoComplete
         dataSource={this.state.dataSource}
-        style={{ width: 400 }}
+        style={{ width: "100%" }}
         onSelect={this.onSelect}
         onSearch={this.handleSearch}
         placeholder="Em qualquer lugar"

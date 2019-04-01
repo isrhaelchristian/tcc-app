@@ -4,7 +4,6 @@ import { colors, fonts } from "../../settings";
 const styles = StyleSheet.create({
   container: {
     width: "15vw",
-    height: "50vh",
     display: "flex",
     flexDirection: "column",
     alignContent: "center",
@@ -12,7 +11,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginRight: 40,
     backgroundColor: colors.white,
-    borderRadius: 3,
+    borderRadius: 4,
     padding: 10
   },
   infosContainer: {
@@ -25,7 +24,7 @@ const styles = StyleSheet.create({
     color: colors.darker,
     fontFamily: fonts.family,
     fontSize: "18px",
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   infos: {
     display: "flex",
@@ -86,20 +85,65 @@ const styles = StyleSheet.create({
   headerInfos: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "flex-start",
     marginLeft: 20
   },
   name: {
     color: colors.darker,
     fontFamily: fonts.family,
-    fontSize: "10px",
+    fontSize: "12px",
     fontWeight: "bold"
   },
   locality: {
     color: colors.darker,
     fontFamily: fonts.family,
-    fontSize: "10px"
+    fontSize: "12px"
+  },
+  actionsContainer: {
+    width: "100%",
+    display: 'flex',
+    justifyContent: "center",
+    alignItems: 'center',
+    marginTop: 15
+  },
+  followButton: {
+    border: "1px solid",
+    backgroundColor: colors.white,
+    borderRadius: 5,
+    color: colors.primary,
+    padding: 10,
+    cursor: 'pointer',
+    width: "80%",
+    marginTop: 20,
+    marginBottom: 10
+  },
+  statsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: "100%",
+    justifyContent: 'space-around',
+    marginTop: 20,
+    borderTop: "1px solid",
+    borderTopColor: colors.dark,
+    paddingTop: 20
+  },
+  itemContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: "center",
+    width: "33%"
+  },
+  statValue: {
+    color: colors.darker,
+    fontFamily: fonts.family,
+    fontWeight: 'bold',
+    fontSize: "16px"
+  },
+  statLabel: {
+    color: colors.darker,
+    fontFamily: fonts.family,
+    fontSize: "12px"
   }
 });
 

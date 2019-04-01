@@ -6,9 +6,10 @@ const styles = StyleSheet.create({
     width: "100vw",
     display: "flex",
     alignContent: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     flexDirection: "column",
-    backgroundColor: colors.dark
+    backgroundColor: colors.dark,
+    minHeight: "100vh"
   },
   header: {
     width: "100vw",
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     width: "100vw",
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "center"
   }
 });
