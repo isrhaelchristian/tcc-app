@@ -3,7 +3,6 @@ import { StyleSheet } from "aphrodite";
 const styles = StyleSheet.create({
   container: {
     width: "30vw",
-    height: "50vh",
     display: "flex",
     alignContent: "center",
     justifyContent: "center",
@@ -12,7 +11,7 @@ const styles = StyleSheet.create({
   },
   mainImgContainer: {
     width: "100%",
-    height: "80%",
+    height: "40vh",
     overflow: "hidden",
     borderRadius: 5
   },
@@ -22,7 +21,7 @@ const styles = StyleSheet.create({
   },
   carouselContainer: {
     width: "100%",
-    height: "20%",
+    height: "10vh",
     display: "flex",
     flexDirection: "row"
   },

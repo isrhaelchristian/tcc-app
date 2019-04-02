@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { css } from "aphrodite";
 
+import Comments from "../Comments"
+
 import styles from "./styles";
 
 export default class ImagesGrid extends Component {
@@ -56,6 +58,7 @@ export default class ImagesGrid extends Component {
             </div>
           ))}
         </div>
+        <Comments />
       </div>
     );
   }
