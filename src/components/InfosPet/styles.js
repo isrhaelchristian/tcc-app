@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 5,
     color: colors.primary,
+    fontFamily: fonts.comfortaa,
     padding: 10,
     cursor: 'pointer',
     width: "80%",

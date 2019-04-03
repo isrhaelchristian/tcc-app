@@ -1,6 +1,7 @@
 import {
   StyleSheet
 } from 'aphrodite';
+import { colors, fonts } from "../../settings";
 
 const styles = StyleSheet.create({
   buttonSignUp: {
@@ -14,9 +15,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   btnText: {
-    color: '#FFFFFF',
-    fontSize: '20px',
-    marginBottom: 0
+    color: colors.white,
+    fontSize: '20pt',
+    marginBottom: 0,
+    fontFamily: fonts.comfortaa
   }
 });
 

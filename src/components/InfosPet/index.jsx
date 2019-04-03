@@ -48,7 +48,7 @@ export default class InfosPet extends Component {
             </div>
           </div>
           <div className={css(styles.actionsContainer)}>
-            <button className={css(styles.followButton)}>Seguir publicador</button>
+            <button className={css(styles.followButton)}>seguir publicador</button>
           </div>
         </div>
         <div className={css(styles.statsContainer)}>

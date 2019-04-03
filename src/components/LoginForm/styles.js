@@ -1,6 +1,7 @@
 import {
   StyleSheet
 } from 'aphrodite';
+import { colors, fonts } from "../../settings";
 
 const styles = StyleSheet.create({
   form: {
@@ -12,6 +13,7 @@ const styles = StyleSheet.create({
   },
   formItem: {
     width: '100%',
+    fontFamily: fonts.comfortaa
   },
   actions: {
     display: 'flex',

@@ -4,6 +4,7 @@ import {
 import {
   isMobile
 } from "react-device-detect";
+import { colors, fonts } from "../../settings"
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     paddingLeft: '10vw',
     paddingRight: '10vw',
     paddingTop: isMobile ? '2vh' : '10vh',
-    paddingBottom:  isMobile ? '2vh' : '10vh',
+    paddingBottom: isMobile ? '2vh' : '10vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -20,7 +21,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: '40px',
-    color: '#3AB19B',
+    color: colors.primary,
+    fontFamily: fonts.comfortaa
   },
   socialContainer: {
     display: 'flex',
@@ -46,7 +48,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   subtitle: {
-    color: '#CCC'
+    color: colors.darker,
+    fontFamily: fonts.comfortaa
   }
 });
 

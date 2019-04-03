@@ -4,6 +4,7 @@ import {
 import {
   isMobile
 } from "react-device-detect";
+import { colors, fonts } from "../../settings";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,13 +21,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#3AB19B',
   },
   title: {
-    fontSize: '40px',
-    color: '#FFFFFF',
+    fontSize: '40pt',
+    color: colors.white,
+    fontFamily: fonts.comfortaa
   },
   subtitle: {
-    fontSize: '18px',
-    color: '#FFFFFF',
+    fontSize: '18pt',
+    color: colors.white,
     textAlign: 'center',
+    fontFamily: fonts.comfortaa
   }
 });
 

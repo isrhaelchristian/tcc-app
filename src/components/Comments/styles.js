@@ -69,6 +69,10 @@ const styles = StyleSheet.create({
       color: colors.primaryDark,
       borderColor: colors.dark,
     }
+  },
+  comments: {
+    width: "100%",
+    padding: 10,
   }
 });
 

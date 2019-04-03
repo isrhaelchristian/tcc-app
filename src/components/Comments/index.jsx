@@ -29,6 +29,9 @@ export default class Comments extends Component {
             </div>
           </div>
         </div>
+        <div className={css(styles.comments)}>
+        
+        </div>
       </div>
     );
   }
