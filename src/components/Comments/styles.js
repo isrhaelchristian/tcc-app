@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     color: colors.primary,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14pt",
     fontWeight: 'bold',
   },
@@ -43,12 +43,12 @@ const styles = StyleSheet.create({
   },
   charNumber: {
     color: "#ccc8c6",
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12pt"
   },
   rules: {
     color: colors.primary,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12pt",
     marginRight: 10,
     cursor: 'pointer',

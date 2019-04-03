@@ -22,13 +22,13 @@ const styles = StyleSheet.create({
   },
   title: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "18px",
     fontWeight: "bold",
   },
   subtitle: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12px",
     marginBottom: 10
   },
@@ -49,12 +49,12 @@ const styles = StyleSheet.create({
   },
   label: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14px"
   },
   value: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14px",
     fontWeight: "bold"
   },
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   desciption: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "10pt"
   },
   publisherContainer: {
@@ -97,13 +97,13 @@ const styles = StyleSheet.create({
   },
   name: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12px",
     fontWeight: "bold"
   },
   locality: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12px"
   },
   actionsContainer: {
@@ -144,13 +144,13 @@ const styles = StyleSheet.create({
   },
   statValue: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontWeight: 'bold',
     fontSize: "16px"
   },
   statLabel: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "12px",
   }
 });

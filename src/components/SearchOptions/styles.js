@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   optionsItem: {
     backgroundColor: colors.primary,
     color: colors.white,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     border: "0px",
     height: "70%",
     borderRadius: 3,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   popoverTitle: {
     margin: 0,
     fontWeight: "bold",
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     color: colors.darker
   },
   popoverContent: {
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   popoverApplyText: {
     margin: 0,
     color: colors.primary,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     ":hover": {
       color: colors.primaryDark
     }

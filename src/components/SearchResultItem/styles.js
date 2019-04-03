@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontWeight: "bold",
     margin: 0
   },
@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
   },
   tagText: {
     color: colors.white,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     margin: 0
   },
   addressText: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontWeight: "bold",
     margin: 0
   }

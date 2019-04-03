@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     paddingLeft: "5vw"
   },
   resultTitle: {
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontWeight: "bold",
     fontSize: "18pt",
     margin: 0

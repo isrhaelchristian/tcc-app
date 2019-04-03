@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     color: colors.darker,
     fontWeight: 'bold',
     margin: 0,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     ':hover': {
       borderBottom: '2px solid',
       borderBottomColor: colors.darker,

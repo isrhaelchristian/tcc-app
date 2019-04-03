@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   getText: {
     color: colors.white,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14px",
     marginLeft: 15
   },
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   donateText: {
     color: colors.primary,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14px",
     marginLeft: 15
   },
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   },
   followText: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "14px",
   },
   switchChecked: {

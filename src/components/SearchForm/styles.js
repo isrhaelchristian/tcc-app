@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   formTitle: {
     color: colors.darker,
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontSize: "22px",
     fontWeight: "bold"
   },

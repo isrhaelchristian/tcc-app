@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     paddingLeft: "5vw"
   },
   exploreTitle: {
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     fontWeight: "bold",
     fontSize: "18pt",
     margin: 0
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     color: colors.darker,
     fontWeight: "bold",
     fontSize: "12pt",
-    fontFamily: fonts.family,
+    fontFamily: fonts.comfortaa,
     margin: 0
   }
 });
