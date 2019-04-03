@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   formItem: {
-    width: "100%"
+    width: "100%",
+    fontFamily: fonts.comfortaa
   },
   actions: {
     display: "flex",
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
     border: "2px solid #FFFFFF",
     display: "flex",
     alignItems: "center",
+    cursor: 'pointer',
     justifyContent: "center",
     "@media (max-width: 600px)": {
       width: "40vw",
@@ -49,9 +51,10 @@ const styles = StyleSheet.create({
     }
   },
   btnText: {
-    color: "#FFFFFF",
-    fontSize: "20px",
-    marginBottom: 0
+    color: colors.white,
+    fontSize: "14pt",
+    marginBottom: 0,
+    fontFamily: fonts.comfortaa
   }
 });
 
