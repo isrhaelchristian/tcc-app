@@ -26,7 +26,7 @@ export default class SearchExplore extends Component {
               />
             </div>
             <div className={css(styles.exploreItemTitleContainer)}>
-              <p className={css(styles.exploreItemTitle)}>Abrigos</p>
+              <p className={css(styles.exploreItemTitle)}>abrigos</p>
             </div>
           </div>
           <div className={css(styles.exploreItemContainer)}>
@@ -38,7 +38,7 @@ export default class SearchExplore extends Component {
               />
             </div>
             <div className={css(styles.exploreItemTitleContainer)}>
-              <p className={css(styles.exploreItemTitle)}>Cães</p>
+              <p className={css(styles.exploreItemTitle)}>pets</p>
             </div>
           </div>
           <div className={css(styles.exploreItemContainer)}>
@@ -50,7 +50,7 @@ export default class SearchExplore extends Component {
               />
             </div>
             <div className={css(styles.exploreItemTitleContainer)}>
-              <p className={css(styles.exploreItemTitle)}>Gatos</p>
+              <p className={css(styles.exploreItemTitle)}>denúncias</p>
             </div>
           </div>
         </div>

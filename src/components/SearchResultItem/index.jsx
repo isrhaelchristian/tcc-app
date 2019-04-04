@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { css } from "aphrodite";
+import { withRouter } from "react-router-dom"
 
 import { Card, Icon, Tooltip } from "antd";
 
 import styles from "./styles";
 
-export default class SearchResultItem extends Component {
+class SearchResultItem extends Component {
   render() {
     const { item } = this.props;
     return (
@@ -18,7 +19,7 @@ export default class SearchResultItem extends Component {
             <Icon type="heart" />
           </Tooltip>,
           <Tooltip title="Ver Detalhes">
-            <Icon type="eye" />
+            <Icon type="eye" onClick={() => this.props.history.push("pet/1")}/>
           </Tooltip>
         ]}
       >
@@ -41,3 +42,5 @@ export default class SearchResultItem extends Component {
     );
   }
 }
+
+export default withRouter(SearchResultItem);
