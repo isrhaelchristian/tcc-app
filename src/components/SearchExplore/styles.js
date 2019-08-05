@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
   exploreContainer: {
     width: "100%",
     height: "20vh",
-    marginTop: "5vh"
+    marginTop: "5vh",
+    overflow: 'hidden'
   },
   exploreTitleContainer: {
     width: "100%",

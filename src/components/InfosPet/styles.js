@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     width: "100%",
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     marginTop: 20,
     borderTop: "1px solid",
     borderTopColor: colors.dark,
@@ -139,9 +139,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: "center",
-    width: "33%",
+    width: "32%",
     cursor: 'pointer',
-    wordWrap: 'break-word',
+    wordBreak: 'break-word',
+
   },
   statValue: {
     color: colors.darker,
@@ -153,6 +154,7 @@ const styles = StyleSheet.create({
     color: colors.darker,
     fontFamily: fonts.comfortaa,
     fontSize: "12px",
+    wordWrap: 'break-word'
   }
 });
 

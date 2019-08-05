@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
     overflowX: "unset",
     display: "flex",
     flexDirection: "row",
-    alignItems: "flex-start",
+    justifyContent: 'space-between',
     flexWrap: "wrap",
-    paddingLeft: "5vw"
+    paddingLeft: "5vw",
+    paddingRight: "5vw"
   }
 });
 

@@ -29,18 +29,13 @@ export default class InfosPet extends Component {
           </div>
           <div className={css(styles.descContainer)}>
             <p className={css(styles.desciption)}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse quis elementum risus, quis ornare neque. Vestibulum ut
-              lacus vestibulum, maximus sapien vitae, tempus tellus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis elementum risus, quis ornare neque. Vestibulum ut lacus vestibulum,
+              maximus sapien vitae, tempus tellus.
             </p>
           </div>
           <div className={css(styles.publisherContainer)}>
             <div className={css(styles.avatarContainer)}>
-              <img
-                src="http://i47.tinypic.com/359a4jd.jpg"
-                alt=""
-                className={css(styles.avatar)}
-              />
+              <img src="http://i47.tinypic.com/359a4jd.jpg" alt="" className={css(styles.avatar)} />
             </div>
             <div className={css(styles.headerInfos)}>
               <span className={css(styles.name)}>Publicadora</span>
